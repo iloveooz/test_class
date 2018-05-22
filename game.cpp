@@ -30,7 +30,17 @@ class Soldier : public Unit {
 		
 		Soldier(int a, int b): Unit(a), damage(b) { }
 };
-	
+
+class Horse : public Unit {
+	private:
+		int speed;
+	public:
+		void ShowSpeed() {
+			cout << "Horse speed: " << speed << '\n';
+		}
+		
+		Horse(): speed(20) { }
+	};
 	
 	int main () {
 		Unit Kyle;
